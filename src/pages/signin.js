@@ -1,5 +1,6 @@
 
 import React, {useState} from "react";
+import {NavLogo} from "../components/Navbar/NavbarElements";
 
 const Signin = () => {
     const [email,setEmail]= useState("");
@@ -9,8 +10,13 @@ const Signin = () => {
         console.log(email);
     }
   return (
+
     <div className={"register-form"}>
+
     <form className={"form-container"} onSubmit={handleSubmit}>
+        <NavLogo >dolla</NavLogo>
+
+        <h2>Login</h2>
         <label className={"label"} for="email">Email:</label>
         <input className={"text-input"} value={email} type={"email"} id = "Email" placeholder="youremail@gmail.com" name="email"/>
         <label className={"label"} htmlFor="password">Password:</label>
@@ -18,6 +24,7 @@ const Signin = () => {
         <button className={"btn"} type={"submit"}> log in</button>
         <div>Don't hava an account?</div> <a href="https://somthing.com">register here</a>
     </form>
+
     </div>
   )
 }

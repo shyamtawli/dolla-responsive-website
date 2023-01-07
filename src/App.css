@@ -5,25 +5,30 @@
   font-family: 'Encode Sans Expanded',sans-serif;
 }
 .register-form{
+  color: #fff;
+  background-image: url("images/65743.jpg");
+  background-repeat: no-repeat;
   text-align: center;
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(black,darkgreen,black);
+
 }
 
 .form-container{
+
   border-radius: 8px;
   padding: 1rem 1rem;
   margin: 5rem 5rem;
   border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  border-width: 3px;
+  border-color: #055C05;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
 }
+
 
 .label{
   font-size: 1.7rem;
@@ -31,13 +36,13 @@
   padding: 1rem;
 }
 .text-input {
-  color: green;
+
   padding: 8px 4px;
   width: 300px;
   border-style: solid;
   border-color: black;
   border-width: 2px;
-  background-color: darkgreen;
+  background-color: #055C05;
   font-size: 20px;
   border-radius: .5rem;
   transition-duration: 200ms;
@@ -46,9 +51,8 @@
 }
 .text-input:focus {
   outline: none;
-  border-color: #636060;
   border-left-color: black;
-  background-color: green;
+  background-color: #055C05;
 }
 .btn {
   margin-top: 1rem;
@@ -56,7 +60,7 @@
   padding: .8rem 3rem;
   font-size: 1.7rem;
   color: #fff;
-  background: green;
+  background: #055C05;
   border-radius: .5rem;
   cursor: pointer;
 }
