@@ -14,9 +14,9 @@ const Signin = () => {
     <div className={"register-form"}>
 
     <form className={"form-container"} onSubmit={handleSubmit}>
-        <NavLogo >dolla</NavLogo>
 
-        <label className={"headOfLogin"}>Login to your acount</label>
+
+        <label className={"headOfLogin"}>login to your acount</label>
         <label className={"label"} for="email">Email:</label>
         <input className={"text-input"} value={email} type={"email"} id = "Email"  name="email"/>
         <label className={"label"} htmlFor="password">Password:</label>

@@ -35,6 +35,7 @@
 
 .label{
   font-size: 1rem;
+  margin-bottom: 1rem;
   text-align: left;
 }
 .text-input {
@@ -67,4 +68,5 @@
   background: #05ad60;
   border-radius: .5rem;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
