@@ -6,7 +6,7 @@
 }
 .register-form{
   color: #fff;
-  background-image: url("images/65743.jpg");
+  background-color: #05ad60;
   background-repeat: no-repeat;
   text-align: center;
   display: flex;
@@ -15,15 +15,19 @@
   justify-content: center;
 
 }
-
+.headOfLogin{
+  padding: 2rem;
+  margin:2rem ;
+}
 .form-container{
 
   border-radius: 8px;
-  padding: 1rem 1rem;
+  padding: 3rem 3rem;
   margin: 5rem 5rem;
   border-style: solid;
   border-width: 3px;
-  border-color: #055C05;
+  background-color: black;
+  border-color: black;
   display: flex;
   flex-direction: column;
 
@@ -31,9 +35,8 @@
 
 
 .label{
-  font-size: 1.7rem;
+  font-size: 1rem;
   text-align: left;
-  padding: 1rem;
 }
 .text-input {
 
@@ -42,7 +45,7 @@
   border-style: solid;
   border-color: black;
   border-width: 2px;
-  background-color: #055C05;
+
   font-size: 20px;
   border-radius: .5rem;
   transition-duration: 200ms;
@@ -52,7 +55,9 @@
 .text-input:focus {
   outline: none;
   border-left-color: black;
-  background-color: #055C05;
+}
+.a1{
+  color: darkgray;
 }
 .btn {
   margin-top: 1rem;
@@ -60,7 +65,7 @@
   padding: .8rem 3rem;
   font-size: 1.7rem;
   color: #fff;
-  background: #055C05;
+  background: #05ad60;
   border-radius: .5rem;
   cursor: pointer;
 }

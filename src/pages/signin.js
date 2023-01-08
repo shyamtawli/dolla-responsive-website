@@ -16,13 +16,13 @@ const Signin = () => {
     <form className={"form-container"} onSubmit={handleSubmit}>
         <NavLogo >dolla</NavLogo>
 
-        <h2>Login</h2>
+        <label className={"headOfLogin"}>Login to your acount</label>
         <label className={"label"} for="email">Email:</label>
-        <input className={"text-input"} value={email} type={"email"} id = "Email" placeholder="youremail@gmail.com" name="email"/>
+        <input className={"text-input"} value={email} type={"email"} id = "Email"  name="email"/>
         <label className={"label"} htmlFor="password">Password:</label>
-        <input className={"text-input"} value={password} type={"password"} id="password" placeholder="*******" name="password"/>
+        <input className={"text-input"} value={password} type={"password"} id="password"  name="password"/>
         <button className={"btn"} type={"submit"}> log in</button>
-        <div>Don't hava an account?</div> <a href="https://somthing.com">register here</a>
+        <div>Don't hava an account?</div> <a className={"a1"} href="https://somthing.com">register here</a>
     </form>
 
     </div>
