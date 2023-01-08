@@ -1,6 +1,4 @@
-
 import React, {useState} from "react";
-import {NavLogo} from "../components/Navbar/NavbarElements";
 
 const Signin = () => {
     const [email,setEmail]= useState("");
@@ -9,6 +7,13 @@ const Signin = () => {
         e.preventDefault();
         console.log(email);
     }
+
+    const handleemail = (e) =>{
+      setEmail(e.target.value);
+    }
+    const handlepass = (e) =>{
+      setPassword(e.target.value);
+    }
   return (
 
     <div className={"register-form"}>
@@ -16,13 +21,14 @@ const Signin = () => {
     <form className={"form-container"} onSubmit={handleSubmit}>
 
 
-        <label className={"headOfLogin"}>login to your acount</label>
-        <label className={"label"} for="email">Email:</label>
-        <input className={"text-input"} value={email} type={"email"} id = "Email"  name="email"/>
-        <label className={"label"} htmlFor="password">Password:</label>
-        <input className={"text-input"} value={password} type={"password"} id="password"  name="password"/>
-        <button className={"btn"} type={"submit"}> log in</button>
-        <div>Don't hava an account?</div> <a className={"a1"} href="https://somthing.com">register here</a>
+        <label className={"headOfLogin"}>Login to your Account</label>
+        <label className={"label"} for="email">Email</label>
+        <input className={"text-input"} onChange={handleemail} value={email} type={"email"} id = "Email"  name="email"/>
+        <label className={"label"}>Password</label>
+        <input className={"text-input"} onChange={handlepass} value={password} type={"password"} id="password"  name="password"/>
+        <button className={"btn"} type={"submit"}> Log In</button>
+        <div>Don't hava an account?</div> 
+        <a className={"a1"} href="https://somthing.com">Register here</a>
     </form>
 
     </div>
